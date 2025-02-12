@@ -13,7 +13,7 @@ provider "aws" {
 
 # Local variables block for configuration values
 locals {
-    aws_key = "SANJEEV_USEAST1_KEY"   # SSH key pair name for EC2 instance access
+    aws_key = "SANJEEV_USEAST1_KEY"   # SSH key pair name for EC2 instance
 }
 
 resource "aws_security_group" "allow_http" {
