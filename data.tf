@@ -27,3 +27,10 @@ data "aws_ami" "amazonlinux" {
         values = ["x86_64"]
     }
 }
+
+data "aws_security_groups" "existing_sg" {
+  filter {
+    name   = "group-name"
+    values = ["allow_http"]
+  }
+}
