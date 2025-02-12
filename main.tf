@@ -17,7 +17,6 @@ locals {
 }
 
 resource "aws_security_group" "allow_http" {
-  count       = length(data.aws_security_groups.existing_sg.ids) > 0 ? 0 : 1
   name        = "allow_http"
   description = "Allow HTTP and SSH traffic"
 
