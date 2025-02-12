@@ -16,8 +16,8 @@ locals {
     aws_key = "SANJEEV_USEAST1_KEY"   # SSH key pair name for EC2 instance
 }
 
-resource "aws_security_group" "allow_http" {
-  name        = "allow_http"
+resource "aws_security_group" "allow_http_ssh" {
+  name        = "allow_http_ssh"
   description = "Allow HTTP and SSH traffic"
 
   ingress {
